@@ -4,7 +4,7 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
 
 1. TDD?
 
-   - Test Driven Development
+   - [Test Driven Development](https://semaphoreci.com/blog/test-driven-development)
    - Test-First Programming
    - allows **short feedback loops** where developers write just the right amount of code and design to make the software work
 
@@ -15,6 +15,8 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
    - [Behavior-Driven Development](https://semaphoreci.com/community/tutorials/behavior-driven-development)
    - is a software development process which is about minimizing feedback loop
    - combines **Test Driven Development**
+   - what, not how: We think about what the system does, rather than how it does it.
+   - is not UI testing
 
      ![BDD](public/images/bdd.jpeg)
 
