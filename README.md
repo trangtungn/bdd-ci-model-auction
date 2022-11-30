@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails app should cover the followings:
 
-Things you may want to cover:
+1. BDD?
 
-* Ruby version
+   - [Behavior-Driven Development](https://semaphoreci.com/community/tutorials/behavior-driven-development)
 
-* System dependencies
+2. Test models (Bid, Auction, User)
 
-* Configuration
+3. Test business logic (BiddingEngine)
 
-* Database creation
+4. Use CI to automate testing
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   - [CI with Semaphore](https://semaphoreci.com/continuous-integration)
+   - [CI Pipeline](https://semaphoreci.com/blog/cicd-pipeline)
+   - [Dockerizing a RoR app](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
