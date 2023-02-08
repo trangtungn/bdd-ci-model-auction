@@ -74,7 +74,7 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
                end
             end
 
-   B. [RSpec Feature spec](https://relishapp.com/rspec/rspec-rails/v/6-0/docs/feature-specs/feature-spec)
+   B. [Feature spec](https://relishapp.com/rspec/rspec-rails/v/6-0/docs/feature-specs/feature-spec)
       - high-level tests via app's external interface, usually web pages.
       - `type: :feature` (OR set `config.infer_spec_type_from_file_location!` and place files in `spec/features` instead)
       - DSL:
@@ -107,7 +107,7 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
                end
             end
 
-   C. [RSpec Request spec:](https://relishapp.com/rspec/rspec-rails/v/6-0/docs/request-specs/request-spec)
+   C. [Request spec:](https://relishapp.com/rspec/rspec-rails/v/6-0/docs/request-specs/request-spec)
       - wraps around **Rails' Integration Testing**.
       - `type: :request` (OR set `config.infer_spec_type_from_file_location!` and place files in `spec/requests` instead)
       - Capybara is NOT supported in request specs
@@ -126,7 +126,7 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
                end
             end
 
-   D. [RSpec Controller spec:](https://relishapp.com/rspec/rspec-rails/v/6-0/docs/controller-specs)
+   D. [Controller spec:](https://relishapp.com/rspec/rspec-rails/v/6-0/docs/controller-specs)
       - wraps around **Rails' Functional Testing**.
       - `type: :controller` (OR set `config.infer_spec_type_from_file_location!` and place files in `spec/controllers` instead)
 
