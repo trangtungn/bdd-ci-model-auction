@@ -1,5 +1,8 @@
 # README
 
+![DONE](public/images/check.ico)
+
+
 This Rails app follows this article [How to Test Rails Models with RSpec](https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-rspec#h-what-is-behaviour-driven-development) which should cover the followings:
 
 1. TDD?
@@ -34,11 +37,14 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
    - [CI Pipeline](https://semaphoreci.com/blog/cicd-pipeline)
    - [Dockerizing a RoR app](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
 
-6. Tools:
+
+## Appendix
+
+1. Tools:
    - **Capybara**: for writing integration tests. System tests use Capybara under the hood.
    - [**Cucumber**](https://medium.com/@enikozsoldos93/cucumber-in-ruby-on-rails-1a4c2561ae54): for behavior-driven development (BDD), which allows developers to write tests in a natural language syntax.
 
-7. Rails System Testing:
+2. Rails System Testing:
 
          require "rails_helper"
 
@@ -59,7 +65,7 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
    - type: :system
 
 
-8. Rails Integration Testing:
+3. Rails Integration Testing:
 
          require "rails_helper"
 
@@ -80,7 +86,7 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
    - uses RSpec/Capybara syntax
    - focuses on testing the interactions between different parts of a web application
 
-9. Rails Functional Testing:
+4. Rails Functional Testing:
 
          require "rails_helper"
 
@@ -101,7 +107,7 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
             end
          end
 
-   - Example with Capybara:
+   Example with Capybara:
 
          require "rails_helper"
 
@@ -123,13 +129,13 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
 
    - type: :controller
 
-10. [Capybara](https://semaphoreci.com/community/tutorials/integration-testing-ruby-on-rails-with-minitest-and-capybara#what-is-integration-testing):
+5. [Capybara](https://semaphoreci.com/community/tutorials/integration-testing-ruby-on-rails-with-minitest-and-capybara#what-is-integration-testing):
    - an acceptance test framework for webapp.
    - to do end-to-end testing in Rails applications.
    - to simulate a user on a web page and interact with the web page.
    - runs in headless mode by default.
 
-11. References:
+6. References:
 
    - [Intro RSpec and Capybara testing](https://rubyyagi.com/intro-rspec-capybara-testing/)
    - [Cucumber](https://medium.com/@enikozsoldos93/cucumber-in-ruby-on-rails-1a4c2561ae54)
