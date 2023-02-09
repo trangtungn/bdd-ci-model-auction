@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe Auction, type: :model do
+RSpec.shared_context 'auction setup' do
   let(:seller) do
     User.new(email: 'jane@doe.com', password: 'pw1234')
   end
 
-  subject do
+  def create_auction
     described_class.new(
       title: 'Anything',
       description: 'Lorem ipsum',
@@ -15,10 +17,10 @@ RSpec.describe Auction, type: :model do
     )
   end
 
-  it 'is valid with valid attributes' do
-    expect(subject).to be_valid
-  end
+  subject { create_auction }
+end
 
+RSpec.shared_examples 'Validations' do
   it 'is not valid without a title' do
     subject.title = nil
     expect(subject).to_not be_valid
@@ -38,6 +40,12 @@ RSpec.describe Auction, type: :model do
     subject.end_date = nil
     expect(subject).to_not be_valid
   end
+end
+
+RSpec.describe Auction, type: :model do
+  include_context 'auction setup'
+
+  include_examples 'Validations'
 
   describe 'Associations' do
     it { should belong_to(:user).without_validating_presence }
