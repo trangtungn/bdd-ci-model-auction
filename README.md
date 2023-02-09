@@ -4,7 +4,10 @@
 
 
 This Rails app follows this article [How to Test Rails Models with RSpec](https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-rspec#h-what-is-behaviour-driven-development) which should cover the followings:
+   1. Using RSpec to test models and business logic.
+   2. Applying Continuous Integration with  Semaphore to automate testing
 
+## Questions? Problems?
 1. TDD?
 
    - [Test Driven Development](https://semaphoreci.com/blog/test-driven-development)
@@ -20,18 +23,17 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
 
    - [Behavior-Driven Development](https://semaphoreci.com/community/tutorials/behavior-driven-development)
    - is a software development process which is about minimizing feedback loop
-   - combines **Test Driven Development**
+   - combines general techniques and principles of **Test Driven Development** (TDD)
    - what, not how: We think about what the system does, rather than how it does it.
    - is not UI testing.
-   - Tool: Cucumber testing framework (can be used by BAs or POs).
 
      ![BDD](public/images/bdd.jpeg)
 
-3. Test models (Bid, Auction, User)
+3. Testing models (Bid, Auction, User)
 
-4. Test business logic (BiddingEngine)
+4. Testing business logic (BiddingEngine)
 
-5. Use CI to automate testing
+5. Using CI to automate testing
 
    - [CI with Semaphore](https://semaphoreci.com/continuous-integration)
    - [CI Pipeline](https://semaphoreci.com/blog/cicd-pipeline)
@@ -40,7 +42,7 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
 
 ## Appendix
 
-1. Tools:
+1. Testing Frameworks:
 
    A. [**Capybara**](https://semaphoreci.com/community/tutorials/integration-testing-ruby-on-rails-with-minitest-and-capybara#what-is-integration-testing): for writing integration tests.
       - an acceptance test framework for webapp.
@@ -48,7 +50,10 @@ This Rails app follows this article [How to Test Rails Models with RSpec](https:
       - to simulate a user on a web page and interact with the web page.
       - runs in headless mode by default.
 
-   B. [**Cucumber**](https://medium.com/@enikozsoldos93/cucumber-in-ruby-on-rails-1a4c2561ae54): for behavior-driven development (BDD), which allows developers to write tests in a natural language syntax.
+   B. [**Cucumber**](https://medium.com/@enikozsoldos93/cucumber-in-ruby-on-rails-1a4c2561ae54):
+      - testing framework
+      - allows tester to use Behavior-Driven Development (BDD)
+      - to write tests in a natural language syntax.
 
 2. RSpec
 
